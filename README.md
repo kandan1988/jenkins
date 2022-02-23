@@ -12,6 +12,6 @@ cd jenkins/jenkins-install
 docker-compose up -d
 
 
-# To Get first time admin passowrd
+# To Get first time admin password
 
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
