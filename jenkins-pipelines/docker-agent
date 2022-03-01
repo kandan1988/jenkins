@@ -1,0 +1,20 @@
+pipeline {
+    agent {
+      docker{
+        image 'maven'
+        }
+    }
+
+    environment {
+        NAME = 'mcsquare'
+        LASTNAME = 'solutions'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo $NAME $LASTNAME'
+            }
+        }
+    }
+}
