@@ -15,3 +15,6 @@ docker-compose up -d
 # To Get first time admin password
 
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+# FOr docker Agent change the docker path in the compose file
